@@ -54,7 +54,7 @@ class TestVarasto(unittest.TestCase):
         
     def test_ota_liian_vahan(self):
         maara = self.varasto.ota_varastosta(-5)
-        self.assertAlmostEqual(maara, 0)
+        self.assertAlmostEqual(maara, 10)
 
     def test_nega_constructor1(self):
         self.varasto = Varasto(-5,-5)
